@@ -1,0 +1,210 @@
+.history{
+    &-promo{
+        background:url(../img/history/promo_bg.jpg) center center / cover no-repeat;
+        background-position: 50% 50%;
+        min-height: 100vh;
+        &__wrapper{
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+        }
+        &__txt{
+            position: absolute;
+            &:nth-child(1){
+                top: 40px;
+                right: 100px;
+            }
+            &:nth-child(2){
+                left:120px;
+                bottom: 0;
+            }
+            &:nth-child(3){
+                top: 0;
+                right: 20px;
+            }&:nth-child(4){
+                top: 170px;
+                right: 20px;
+            }
+            &:nth-child(5){
+                left:200px;
+                bottom: 130;
+            }
+            &:nth-child(6){
+                top: 70;
+                right: 820px;
+            }
+        }
+    }
+
+    &-quote{
+        height: 346px;
+        .container{
+            max-width:  660px;
+        }
+        margin-top: 60px;
+        background:url(../img/history/quote_bg.jpg) center center / cover no-repeat;
+        padding-top: 75px;
+        // p{
+        //     mark{
+        //         background:$white-color;
+        //     }
+        // }
+        &__txt{
+            font-size: $fz-md;
+            line-height: 1.5;
+        }
+        &__sign{
+            text-align: right;
+            width: 50%;
+            position: absolute;
+            right: 0;
+            bottom: -92px;
+            font-size: $fz-base;
+        }
+    }
+    &-30{
+        .container{
+            &:after{
+                content:'';
+                position: absolute;
+                width: 209px;
+                height: calc(100% + 240px);
+                background: rgba($danger-color, .2);
+                top: -120px;right: -60px;
+            }
+        }
+        margin-top: 60px;
+        padding: 120px 0 120px 0;
+        background:url(../img/history/1930_bg.jpg) center center / cover no-repeat;
+        &__title{
+            background:$danger-color;
+
+        }
+        &__main-txt{
+            position: relative;
+            width: 807px;
+            padding: 10px 10px 40px 161px;
+            &:after{
+                content: '';
+                position: absolute;
+                background:url(../img/history/lenin.png) center center / cover no-repeat;
+                left: -33%;bottom:-33%;
+                height: 797px;width: 564px;
+            }
+            @include auto;
+            margin-left: 15%;
+            &-p{
+                font-size: $fz-md;
+                &:nth-child(1){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__subdescr{
+            margin: 120px auto 0 15%;
+            display: block;
+        }
+        &__items{
+            margin-top: 40px;
+            display: flex;align-items: center;
+            &-txt{
+                padding: 10px 10px 10px 60px;
+                width: 640px;
+                font-size:$fz-base;
+                line-height: 1.5;
+            }
+            &-img{
+                border: 10px solid rgba(255,255,255,.5);
+                border-radius: 8px;
+            }
+            &-descr{
+                text-align: right;
+                width: 66%;
+                margin-left: 33%;
+            }
+        }
+    }
+    &-40{
+        .container{
+            &:after{
+                content:'';
+                position: absolute;
+                width: 209px;
+                height: calc(100% + 240px);
+                background: rgba($light-grey, .75);
+                top: -120px;right: -60px;
+            }
+        }
+        min-height: 100vh;
+        margin-top: 60px;
+        position: relative;
+        padding: 120px 0 120px 0;
+        &:after{
+            content:'';
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%;
+            height: 100%;
+            background:url(../img/history/1940_bg.jpg) center center / cover no-repeat;
+            z-index: -1;
+            opacity: 75%;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%;height: 100%;
+            background:rgba(174, 174, 174, 0.25);
+        }
+        &__title{
+            background: $dark-grey;
+        }
+        &__lenin{
+            position: relative;
+            margin-left: 6%;
+            &-txt{
+                width: 745px;
+                padding: 10px 10px 10px 139px;
+                line-height: 1.5;
+                font-size: $fz-base;
+                &:nth-child(2) {
+                    margin: 200px 0 0 68px;
+                    width: 806px;
+                    padding-left: 208px;
+                }
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 428px;height: 890px;
+                left: -9%;bottom: 0;
+                background:url(../img/history/lenin_red.png) center center / cover no-repeat;
+            }
+            &:before{
+                content: 'Фото из личного архива 2021г.';
+                position: absolute;
+                bottom: -30px;left:-6%;
+            }
+        }
+        &__uaz{
+            margin-top: -30px;
+            &-txt{
+                display: block;
+                margin-top: 350px;
+                width: 438px;
+                padding:10px;
+                line-height: 1.5;
+                font-size: $fz-base;
+                position: relative;
+                &:after{
+                    content:'';
+                    position: absolute;
+                    right: -167%;
+                    bottom: 0;
+                    width: 740px;height: 533px;
+                    background:url(../img/history/uaz.png) center center / cover no-repeat;
+                }
+            }
+        }
+    }
+}

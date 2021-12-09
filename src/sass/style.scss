@@ -1,0 +1,25 @@
+@import 'libs/normalize.min';
+@import 'libs/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'libs/libs';
+
+*,html,body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:$font-color;
+    @include reset;
+}
+
+.container {
+    position: relative;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+
+@import 'blocks/history';
+
+@import 'blocks/media';

@@ -1,0 +1,38 @@
+@mixin auto {
+    margin: {
+     left: auto;
+     right: auto;
+    }
+  }
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+content: $content;
+display: $display;
+position: $pos;
+}
+@mixin сentering-xy() { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); } @mixin сentering-x() { position: absolute; left: 50%; transform: translateX(-50%); } @mixin сentering-y() { position: absolute; top: 50%; transform: translateY(-50%); }
+
+@mixin reset{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    font-size: 16px;
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+    p{
+        padding: 0;
+    }
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    button{
+        cursor: pointer;
+        border:none;outline: none;
+        display: block;
+    }
+}

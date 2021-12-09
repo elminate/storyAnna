@@ -1,0 +1,39 @@
+.header{
+    padding: 33px 0;
+    background: $white-color;
+    &__nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &-list{    
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 700px;
+        }
+    }
+    &__point{
+        &-link{
+            color:$font-color;
+            font-size:$fz-md;
+            text-transform: uppercase;
+            transition: .2s all;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background:$gold-color;
+                top: -6px;left: 0;
+                transition: .6s all;
+            }
+            &:hover{
+                color:$gold-color;
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
